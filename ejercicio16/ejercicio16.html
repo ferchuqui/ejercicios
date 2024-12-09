@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <h1>Ejecutando Ejercicios JavaScript</h1>
+    <script>
+
+/* Inicia Codigo */
+let matricula = prompt("Ingresa la matrícula del alumno:");
+let calificaciones = [];
+for (let i = 0; i < 5; i++) {
+    calificaciones.push(Number(prompt(`Ingresa la calificación ${i + 1}:`)));
+}
+let promedio = calificaciones.reduce((a, b) => a + b, 0) / calificaciones.length;
+let estado = promedio >= 7 ? "aprobado" : "no aprobado";
+console.log(`Matrícula: ${matricula}, Promedio: ${promedio}, Estado: ${estado}`);
+
+
+/* Termina Codigo */
+
+        console.log("Comision 24234 Farji Luis Fernando");
+    </script>
+</body>
+</html>
